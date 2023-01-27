@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="TLN-A6-MRE">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vih-ZI-jbU">
+                                <rect key="frame" x="0.0" y="100" width="393" height="82.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lve-c8-r2b">
+                                        <rect key="frame" x="167.66666666666666" y="0.0" width="58" height="34"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yx7-bC-W1V">
+                                        <rect key="frame" x="172.33333333333334" y="54.000000000000007" width="48.333333333333343" height="28.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3nE-p5-dCH">
+                                <rect key="frame" x="50" y="682.33333333333337" width="293" height="109.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpb-QE-tlw">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="42.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background" strokeWidth="4">
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="pathSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qug-1g-cCx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CB-ca-FOJ">
+                                        <rect key="frame" x="0.0" y="67.333333333333258" width="293" height="42.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <backgroundConfiguration key="background" strokeWidth="4">
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="pathSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bID-66-qE5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TLN-A6-MRE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Pn-Lb-VI1"/>
+                            <constraint firstItem="vih-ZI-jbU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4WH-i4-a3u"/>
+                            <constraint firstItem="vih-ZI-jbU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="5iB-C6-eMX"/>
+                            <constraint firstItem="TLN-A6-MRE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7c3-Tf-OYV"/>
+                            <constraint firstAttribute="trailing" secondItem="vih-ZI-jbU" secondAttribute="trailing" id="Atw-sm-hPi"/>
+                            <constraint firstAttribute="trailing" secondItem="3nE-p5-dCH" secondAttribute="trailing" constant="50" id="PaC-7y-QUP"/>
+                            <constraint firstItem="3nE-p5-dCH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="dnu-Hg-G9N"/>
+                            <constraint firstAttribute="bottom" secondItem="3nE-p5-dCH" secondAttribute="bottom" constant="60" id="jCY-KS-bzu"/>
+                            <constraint firstAttribute="bottom" secondItem="TLN-A6-MRE" secondAttribute="bottom" id="qD8-io-HLA"/>
+                            <constraint firstItem="TLN-A6-MRE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="ysJ-Lc-8jr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="TLN-A6-MRE" id="fPf-pb-124"/>
+                        <outlet property="bottomOption" destination="5CB-ca-FOJ" id="cvg-4t-cep"/>
+                        <outlet property="goalLabel" destination="lve-c8-r2b" id="dwe-ST-Teb"/>
+                        <outlet property="pathLabel" destination="Yx7-bC-W1V" id="7H9-mP-U8w"/>
+                        <outlet property="topOption" destination="Vpb-QE-tlw" id="spR-ep-Xca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="204" height="130.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
